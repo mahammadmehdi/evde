@@ -2,7 +2,7 @@
     width: 100%;
 }
 .body .container{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,14 +64,18 @@
 }
 
 .art{
-    width: 280px;
-    height: 368px;
+    max-width: 280px;
+    min-height: 368px;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
+.portfolio{
+    max-width: 100%;
+}
+
  .main {
-    width: 100%;
+    max-width:100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-left: 5%;
@@ -87,4 +91,39 @@
 
 .art span{
     margin-left: 30%;
+    
+}
+
+.art button{
+   margin-left: 33%;
+   background-color:white;
+   color:black;
+   height: 35px;
+   width: 90px;
+   border-radius: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: antiquewhite;
+}
+   .icon{
+    margin-left: 30%;
+   }
+
+   .footer{
+    max-width: 100%;
+    min-height: 140px;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   @media screen and (max-width: 620px) {
+    .art button{
+        margin-left: 15%;
+    }
 }
